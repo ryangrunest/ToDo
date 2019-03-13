@@ -1,25 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Todo List</title>
-	<link rel="stylesheet" type="text/css" href="assets/css/todos.css">
-	<link href='https://fonts.googleapis.com/css?family=Roboto:400,700,500' rel='stylesheet' type='text/css'>
-	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-	<script type="text/javascript" src="assets/js/lib/jquery-2.1.4.min.js"></script>
+	<!-- Metadata Goes Here -->
+	<title>To Do List</title>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+	<!-- FontAwesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+ 
+
 </head>
 <body>
+	<!-- Visual Data Goes Here -->
+	<div class="container">
+		<h1>To Do List <span id="toggle-form"><i class="fas fa-pen-alt"></i></span></h1>
+		<input type="text" name="" placeholder="Add New Todo">
+		<ul>
+			<li><span><i class="fa fa-trash"></i></span> To Do's Show Up Here!</li>
+			<li><span><i class="fa fa-trash"></i></span> Click The Pen To Toggle The Add To Do!</li>
+			<li><span><i class="fa fa-trash"></i></span> Type The 'Enter' Tey To Add New To Do!</li>
+		</ul>
+	</div>
 
-<div id="container">
-	<h1>To-Do List <span id="toggle-form"><i class="fa fa-plus"></i></span></h1>
-	<input type="text" placeholder="Add New Todo">
-
-	<ul>
-		<li><span><i class="fa fa-trash"></i></span> Go To Potions Class</li>
-		<li><span><i class="fa fa-trash"></i></span> Buy New Robes</li>
-		<li><span><i class="fa fa-trash"></i></span> Visit Hagrid</li>
-	</ul>
-</div>
-
-<script type="text/javascript" src="assets/js/todos.js"></script>
+<script type="text/javascript" src="assets/js/app.js"></script>
 </body>
 </html>
